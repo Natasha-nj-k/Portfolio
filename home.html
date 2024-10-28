@@ -1,0 +1,99 @@
+<html lang="en"> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natasha | Portfolio</title>
+  <link href="./css/home.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="./images/N2K.png">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <div id="nav-bar" class="navb">
+      <div class="logo"><a href="./home.html"><img src="./images/N2K.png" alt=""></a></div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section id="home" class="intro">
+    <h3 class="one">HELLO, WORLD.</h3>
+    <h1 class="name">I'm Natasha N Karanja</h1>
+    <p class="bio">| UPCOMING WED DEVELOPER | UPCOMING SOFTWARE DEVELOPER |</p>
+
+    <button id="btn" class="hire-btn">HIRE ME</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h1>About Me</h1>
+    <p class="bout">I'm Natasha Karanja. I'm a seventeen year old upcoming web and softwere developer. On skills, I'm able to create programs with python and functioning websites with HTML, CSS and Javascript. My experiences: I created a menu website for a cafe and a recipe program both using differnt programming languages.</p>
+    
+    <ul class="more-bout">
+      <li>Name: Natasha Karanja</li>
+      <li>Date of birth: December, 20th 2006</li>
+      <li>Email: tashyk63@gmail.com</li>
+      <li>Contact: 123456789</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+   <h1>Projects</h1>
+    <div class="project-gallery">
+      <div class="project" id="project1">
+          <img src="./images/sc.png" alt="Project 1">
+          <h2>Menu</h2>
+          <p>This is a website showcasing food items and their prices.</p>
+          <button class="details-btn" onclick="showDetails('project1-details')">More Details</button>
+          <div class="project-details" id="project1-details">
+              <p>The website shows two parts the coffee section and the dessert secton, each having several items and their assigned prices in each category</p>
+          </div>
+      </div>
+
+      <div class="project" id="project2">
+          <img src="./images/recipe.png" alt="Project 2">
+          <h2>Recipe Book</h2>
+          <p>This is a recipe book made with python</p>
+          <button class="details-btn" onclick="showDetails('project2-details')">More Details</button>
+          <div class="project-details" id="project2-details">
+              <p>This is a program, that promts a users to in put recipe steps and whether or not they would like to save it so they could revisit another time.</p>
+          </div>
+      </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h1 class="cl">Contact Me</h1>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <span id="name-error" class="error-message"></span>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <span id="email-error" class="error-message"></span>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <span id="message-error" class="error-message"></span>
+
+      <button type="submit" class="s-btn">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 NATASHA | PORTFOLIO</p>
+  </footer>
+
+  <script src="./js/home.js"></script>
+</body>
+
+</html>
